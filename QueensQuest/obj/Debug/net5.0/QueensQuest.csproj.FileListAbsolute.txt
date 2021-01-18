@@ -1,0 +1,16 @@
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\bin\Debug\net5.0\QueensQuest.exe
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\bin\Debug\net5.0\QueensQuest.deps.json
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\bin\Debug\net5.0\QueensQuest.runtimeconfig.json
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\bin\Debug\net5.0\QueensQuest.runtimeconfig.dev.json
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\bin\Debug\net5.0\QueensQuest.dll
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\bin\Debug\net5.0\ref\QueensQuest.dll
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\bin\Debug\net5.0\QueensQuest.pdb
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\obj\Debug\net5.0\QueensQuest.csprojAssemblyReference.cache
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\obj\Debug\net5.0\QueensQuest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\obj\Debug\net5.0\QueensQuest.AssemblyInfoInputs.cache
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\obj\Debug\net5.0\QueensQuest.AssemblyInfo.cs
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\obj\Debug\net5.0\QueensQuest.csproj.CoreCompileInputs.cache
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\obj\Debug\net5.0\QueensQuest.dll
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\obj\Debug\net5.0\ref\QueensQuest.dll
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\obj\Debug\net5.0\QueensQuest.pdb
+C:\Users\George\Source\Repos\QueensQuest\QueensQuest\obj\Debug\net5.0\QueensQuest.genruntimeconfig.cache

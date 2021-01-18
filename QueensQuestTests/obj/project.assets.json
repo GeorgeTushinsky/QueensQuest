@@ -1648,6 +1648,16 @@
         "build": {
           "build/netcoreapp2.1/xunit.runner.visualstudio.props": {}
         }
+      },
+      "QueensQuest/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/QueensQuest.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/QueensQuest.dll": {}
+        }
       }
     }
   },
@@ -5611,41 +5621,53 @@
         "xunit.runner.visualstudio.2.4.3.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "QueensQuest/1.0.0": {
+      "type": "project",
+      "path": "../QueensQuest/QueensQuest.csproj",
+      "msbuildProject": "../QueensQuest/QueensQuest.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.NET.Test.Sdk >= 16.7.1",
+      "QueensQuest >= 1.0.0",
       "coverlet.collector >= 1.3.0",
       "xunit >= 2.4.1",
       "xunit.runner.visualstudio >= 2.4.3"
     ]
   },
   "packageFolders": {
-    "/home/marola/.nuget/packages/": {}
+    "C:\\Users\\George\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/marola/DotNet/QueensQuest/QueensQuestTests/QueensQuestTests.csproj",
+      "projectUniqueName": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuestTests\\QueensQuestTests.csproj",
       "projectName": "QueensQuestTests",
-      "projectPath": "/home/marola/DotNet/QueensQuest/QueensQuestTests/QueensQuestTests.csproj",
-      "packagesPath": "/home/marola/.nuget/packages/",
-      "outputPath": "/home/marola/DotNet/QueensQuest/QueensQuestTests/obj/",
+      "projectPath": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuestTests\\QueensQuestTests.csproj",
+      "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuestTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/marola/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj": {
+              "projectPath": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -5694,7 +5716,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cPnLBy2x86/qTsGPwr+iUkSOkyMvBTezwqIpxSw9H4bnQFYeBQFPViVG7aM3w8n0D9b+aJKx44D/gukk8ISETw==",
+  "dgSpecHash": "1RvkkxUUpgGdwi97iCIlb2fWOy0H/8AdjWwVuLpsuuFH/cp0ui9TtUz24v1UmdhhmF2gfbMHuY2mDrGqwoUtmw==",
   "success": true,
-  "projectFilePath": "/home/marola/DotNet/QueensQuest/QueensQuest/QueensQuest.csproj",
+  "projectFilePath": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

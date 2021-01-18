@@ -4,23 +4,29 @@ using QueensQuest;
 
 namespace QueensQuestTests
 {
-    public class ChessMatrixSetup
+    public class IsPositionSafeTests
     {
-        public QueensSolver solver { get; set; }
-        public ChessMatrixSetup()
-        {
-            solver = new QueensSolver(8);
-        }
-    }
-    public class IsPositionSafeTests : IClassFixture<ChessMatrixSetup>
-    {
-        ChessMatrixSetup fixture;
-
         [Fact]
-        public void TrueOutputExpected(ChessMatrixSetup fixture)
+        public void PositionNotSafe()
         {
-            this.fixture = fixture;
-            this.fixture.i
+            QueensSolver Solver = new QueensSolver(8);
+            Solver._chessMatrix[0, 0] = true;
+            bool expectation = false;
+
+            bool result = Solver.IsPositionSafe(0,8);
+
+            Assert.Equal(expectation, result);
+        }
+        [Fact]
+        public void PositionIsSafe()
+        {
+            QueensSolver Solver = new QueensSolver(8);
+            Solver._chessMatrix[0, 0] = true;
+            bool expectation = true;
+
+            bool result = Solver.IsPositionSafe(2, 1);
+
+            Assert.Equal(expectation, result);
         }
     }
 }
