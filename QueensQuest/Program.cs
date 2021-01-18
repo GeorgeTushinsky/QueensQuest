@@ -8,17 +8,21 @@ namespace QueensQuest
         {
             QueensSolver solver = new QueensSolver(8);
 
-            bool[,] result = solver.Solve();
+            bool[][,] result = solver.Solve();
 
-            for (int i = 0; i < 8; i++)
+            foreach (var sol in result)
             {
-                Console.Write("[");
-                for (int j = 0; j < 8; j++)
+                for (int i = 0; i < 8; i++)
                 {
-                    Console.Write((result[i,j] ? "Q" : " "));
-                    if (j < 7) Console.Write("|");
+                    Console.Write("[");
+                    for (int j = 0; j < 8; j++)
+                    {
+                        Console.Write((sol[i,j] ? "Q" : " "));
+                        if (j < 7) Console.Write("|");
+                    }
+                    Console.WriteLine("]");
                 }
-                Console.WriteLine("]");
+                Console.WriteLine();
             }
         }
     }
