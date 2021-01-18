@@ -43,5 +43,31 @@ namespace QueensQuest
             
             return true;
         }
+        public bool[,] Solve()
+        {
+            if (!SolveQueens(0))
+                return new bool[0,0];
+
+            return _chessMatrix;
+        }
+        internal bool SolveQueens(int col)
+        {
+            if (col >= _size)
+                return true;
+
+            for (int i = 0; i < _size; ++i)
+            {
+                if (IsPositionSafe(i, col))
+                {
+                    _chessMatrix[i, col] = true;
+
+                    if (SolveQueens(col + 1))
+                        return true;
+                    _chessMatrix[i, col] = false;
+                }
+            }
+
+            return false;
+        }
     }
 }
