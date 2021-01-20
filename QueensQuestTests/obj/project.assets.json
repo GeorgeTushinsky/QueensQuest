@@ -5643,11 +5643,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuestTests\\QueensQuestTests.csproj",
+      "projectUniqueName": "C:\\Users\\George\\source\\repos\\QueensQuest\\QueensQuestTests\\QueensQuestTests.csproj",
       "projectName": "QueensQuestTests",
-      "projectPath": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuestTests\\QueensQuestTests.csproj",
+      "projectPath": "C:\\Users\\George\\source\\repos\\QueensQuest\\QueensQuestTests\\QueensQuestTests.csproj",
       "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuestTests\\obj\\",
+      "outputPath": "C:\\Users\\George\\source\\repos\\QueensQuest\\QueensQuestTests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -5664,8 +5664,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj": {
-              "projectPath": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj"
+            "C:\\Users\\George\\source\\repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj": {
+              "projectPath": "C:\\Users\\George\\source\\repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj"
             }
           }
         }

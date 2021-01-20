@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj": {}
+    "C:\\Users\\George\\source\\repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj": {
+    "C:\\Users\\George\\source\\repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj",
+        "projectUniqueName": "C:\\Users\\George\\source\\repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj",
         "projectName": "QueensQuest",
-        "projectPath": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj",
+        "projectPath": "C:\\Users\\George\\source\\repos\\QueensQuest\\QueensQuest\\QueensQuest.csproj",
         "packagesPath": "C:\\Users\\George\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuest\\obj\\",
+        "outputPath": "C:\\Users\\George\\source\\repos\\QueensQuest\\QueensQuest\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\George\\AppData\\Roaming\\NuGet\\NuGet.Config",

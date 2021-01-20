@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dF6TGYzl2xmpyMnvzT/C2opdldplsD/x1LvBHA8egroouZzllb97OBve1VZuToPsqBgNrCv1A3nyZer99eCgYw==",
+  "dgSpecHash": "ozOxj9mTb9xaqZqqmNFlPb3/XXG2CyJsKv9/yWzSzCrbmXrdFWJr623VYDyFQDIcHr/F0TN4Pr0muyIOwUoXQg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\George\\Source\\Repos\\QueensQuest\\QueensQuestTests\\QueensQuestTests.csproj",
+  "projectFilePath": "C:\\Users\\George\\source\\repos\\QueensQuest\\QueensQuestTests\\QueensQuestTests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\George\\.nuget\\packages\\coverlet.collector\\1.3.0\\coverlet.collector.1.3.0.nupkg.sha512",
     "C:\\Users\\George\\.nuget\\packages\\microsoft.codecoverage\\16.7.1\\microsoft.codecoverage.16.7.1.nupkg.sha512",

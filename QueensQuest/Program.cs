@@ -1,4 +1,5 @@
 ﻿using System;
+using static QueensQuest.QueensSolver;
 
 namespace QueensQuest
 {
@@ -8,7 +9,7 @@ namespace QueensQuest
         {
             QueensSolver solver = new QueensSolver(8);
 
-            bool[][,] result = solver.Solve();
+            int[][,] result = solver.Solve();
 
             foreach (var sol in result)
             {
@@ -17,13 +18,14 @@ namespace QueensQuest
                     Console.Write("[");
                     for (int j = 0; j < 8; j++)
                     {
-                        Console.Write((sol[i,j] ? "Q" : " "));
+                        Console.Write((sol[i, j] == 1 ? "Q" : " "));
                         if (j < 7) Console.Write("|");
                     }
                     Console.WriteLine("]");
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine(result.Length);
         }
     }
 }

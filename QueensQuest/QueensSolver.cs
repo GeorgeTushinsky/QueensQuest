@@ -1,139 +1,73 @@
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using System.Linq;
+using System;
 
 [assembly: InternalsVisibleTo("QueensQuestTests")]
 namespace QueensQuest
 {
     public class QueensSolver
     {
-        internal bool[,] _chessMatrix;
-        internal bool[,] _queensPositions;
+        internal List<int[,]> _queensPositions;
         internal int _size;
         public QueensSolver(int size)
         {
+            _queensPositions = new List<int[,]>();
             _size = size;
-            GenerateMatrix(ref _chessMatrix);
-            GenerateMatrix(ref _queensPositions);
         }
-        internal void GenerateMatrix(ref bool[,] arr)
+        internal bool IsPositionSafe(int[,] board, int row, int col)
         {
-            arr = new bool[_size, _size];
-            for(int i = 0; i < _size; i++)
-                for(int j = 0; j < _size; j++)
-                    arr[i,j] = false;
-        }
-        internal bool IsPositionSafe(int row, int col, out List<int[]> tempArr)
-        {
-            tempArr = new List<int[]>();
-            for(int i = 0; i < _size; ++i)
+            for (int i = 0; i < row; i++)
             {
-                tempArr.Add(new int[] { row, i });
-                tempArr.Add(new int[] { i, row });
-                if (_queensPositions[row, i] || _queensPositions[i, col])
+                if (board[i, col] == 1)
                     return false;
             }
             
-            for(int i = row, j = col; i < _size && j < _size; ++i, ++j)
+            for (int i = row, j = col; i >= 0 && j >= 0; i--, j--)
             {
-                tempArr.Add(new int[] { i, j });
-                if (_queensPositions[i,j])
-                    return false;
-            }
-            
-            for(int i = row, j = col; i >= 0 && j >= 0; --i, --j)
-            {
-                tempArr.Add(new int[] { i, j });
-                if (_queensPositions[i,j])
+                if (board[i, j] == 1)
                     return false;
             }
 
-            for(int i = row, j = col; i < _size && j >= 0; ++i, --j)
+            for (int i = row, j = col; i >= 0 && j < _size; i--, j++)
             {
-                tempArr.Add(new int[] { i, j });
-                if (_queensPositions[i,j])
+                if (board[i, j] == 1)
                     return false;
             }
 
-            for(int i = row, j = col; i >= 0 && j < _size; --i, ++j)
-            {
-                tempArr.Add(new int[] { i, j });
-                if (_queensPositions[i,j])
-                    return false;
-            }
-            
             return true;
         }
-        public bool[][,] Solve()
+        public int[][,] Solve()
         {
-            List<bool[,]> solutions = new List<bool[,]>();
+            int[,] board = new int[_size, _size];
 
+            SolveQueens(board, 0);
+
+            return _queensPositions.ToArray();
+        }
+        internal bool SolveQueens(int[,] board, int row)
+        {
+            if(row == _size)
+            {
+                _queensPositions.Add(board.Clone() as int[,]);
+
+                return true;
+            }
+
+            bool res = false;
             for (int i = 0; i < _size; i++)
             {
-                for (int j = 0; j < _size; j++)
+                if ( IsPositionSafe(board, row, i))
                 {
-                    SolveQueens(j, i);
-                    bool[,] temp = (bool[,])_queensPositions.Clone();
-                    if (CalculateQueens(temp) == _size)
-                        solutions.Add(temp);
-                    GenerateMatrix(ref _chessMatrix);
-                    GenerateMatrix(ref _queensPositions);
+                    board[row, i] = 1;
+
+                    res = SolveQueens(board, row + 1) || res;
+
+                    board[row, i] = 0;
                 }
             }
 
-            return solutions.ToArray();
-        }
-        internal int CalculateQueens(bool[,] arr)
-        {
-            int sum = 0;
-            for (int i = 0; i < _size; i++)
-            {
-                for (int j = 0; j < _size; j++)
-                {
-                    if (arr[i, j] == true) sum++;
-                }
-            }
-            return sum;
-        }
-        internal void SolveQueens(int row, int col)
-        {
-            if (row == _size - 1 && col == _size - 1)
-                return;
-            int[] nextPos;
-            if (_chessMatrix[row, col])
-            {
-                nextPos = NextPosition();
-                if (nextPos.Length == 0) return;
-                SolveQueens(nextPos[0], nextPos[1]);
-                return;
-            }
-            List<int[]> lockedValues;
-            if (IsPositionSafe(row, col, out lockedValues))
-            {
-                _queensPositions[row, col] = true;
-                foreach (int[] pos in lockedValues)
-                {
-                    _chessMatrix[pos[0], pos[1]] = true;
-                }
-            }
-            _chessMatrix[row, col] = true;
-
-            nextPos = NextPosition();
-            if (nextPos.Length == 0) return;
-            SolveQueens(nextPos[0], nextPos[1]);
-        }
-
-        internal int[] NextPosition()
-        {
-            for (int i = 0; i < _size; i++)
-            {
-                for (int j = 0; j < _size; j++)
-                {
-                    if (!_chessMatrix[j, i])
-                        return new int[] { j, i };
-                }
-            }
-
-            return new int[0];
+            return res;
         }
     }
 }
